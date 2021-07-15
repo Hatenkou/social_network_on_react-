@@ -1,0 +1,19 @@
+.content {
+   margin: 5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.content {
+   flex: 2;
+}
+.status {
+   margin-bottom: 3rem;
+}
+.status input {
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+   border: none;
+   width: 50%;
+   padding: 0.5rem;
+   border-radius: 2rem;
+}

@@ -1,0 +1,14 @@
+.messages-content {
+   margin: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.messages {
+   display: flex;
+   background: linear-gradient(to left top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));
+   border-radius: 1rem;
+   margin: 1rem 0rem;
+   padding: 1rem;
+   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+}

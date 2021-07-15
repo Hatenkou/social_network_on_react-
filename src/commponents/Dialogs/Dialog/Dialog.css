@@ -1,0 +1,13 @@
+.dialogsItems a.active {
+}
+
+.dialog a {
+   text-decoration: none;
+   color: #fff;
+}
+.dialog a.active {
+   color: gold;
+}
+
+.message {
+}
