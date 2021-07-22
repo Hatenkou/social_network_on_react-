@@ -7,15 +7,14 @@ import iconNews from '../../assets/images/news.png'
 import iconSettings from '../../assets/images/settings.png'
 import iconUsers from '../../assets/images/users.png'
 import iconMusic from '../../assets/images/music.png'
-const Navbar = () => {
+
+const Navbar = (props) => {
    return (
       <nav>
-         <div className='user'>
 
-         </div>
          <div className='link'>
             <img src={iconProfile} />
-            <NavLink to="/profile"  ><h2>Profile</h2></NavLink>
+            <NavLink to="/profile" ><h2>Profile</h2></NavLink>
          </div>
          <div className='link'>
             <img src={iconComments} />

@@ -1,6 +1,6 @@
 .dialogs-glass {
    background: white;
-   min-height: 90vh;
+   min-height: 80%;
    width: 90%;
    background: linear-gradient(to right top, #65dfc949, #cdbbeb);
    border-radius: 2rem;
@@ -16,6 +16,7 @@
    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
    border-radius: 2rem;
 }
+
 .messages-content {
    flex: 3;
    display: flex;

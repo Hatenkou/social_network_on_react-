@@ -1,14 +1,11 @@
-.background_profile_img {
-   margin: 0;
-   padding: 0;
-   max-width: 100%;
-   max-height: 400px;
+.profile-foto img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-size: auto 150px;
 }
-.foto_user img {
-   padding: 0;
-   max-width: 100px;
-   max-height: 120px;
-}
-.descriptionBlock {
-   padding: 10px;
+
+.info-container {
+   display: flex;
+   justify-content: flex-start;
 }

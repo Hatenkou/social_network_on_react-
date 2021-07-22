@@ -9,7 +9,6 @@ import Music from './commponents/Music/Music';
 import Navbar from './commponents/Navbar/Navbar';
 import News from './commponents/News/News';
 import ProfileConteiner from './commponents/Profile/ProfileConteiner';
-import ProfileInfo from './commponents/Profile/ProfileInfo/ProfileInfo';
 import Setings from './commponents/Setings/Setings';
 
 

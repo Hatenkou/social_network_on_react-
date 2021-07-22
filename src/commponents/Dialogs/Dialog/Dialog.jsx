@@ -6,7 +6,7 @@ import './Dialog.css'
 const Dialog = (props) => {
    let path = '/dialogs/' + props.id;
    return (
-      <div className='dialogs'>
+      <div className='dialogs-container'>
          <div className='dialogsItems'>
             <div>
                <NavLink to={path} >{props.name}</NavLink>

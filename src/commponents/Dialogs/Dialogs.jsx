@@ -1,6 +1,6 @@
 import React from 'react'
 import Dialog from './Dialog/Dialog';
-import c from './Dialogs.css'
+import './Dialogs.css'
 import Message from './Message/Message';
 import { Redirect } from 'react-router-dom';
 import { Field, reduxForm } from 'redux-form';
@@ -11,15 +11,9 @@ const Dialogs = (props) => {
 
    let state = props.dialogsPage;
 
-   let onSendMessageClick = () => {
-      props.sendMessage();
-   };
-   let onNewMessageChange = (e) => {
-      let body = e.target.value;
-      props.updateNewMessageBody(body);
-   };
    let addNewMessage = (values) => {
       props.sendMessage(values.newMessageBody);
+
    };
 
    let dialogsElements =
@@ -27,7 +21,7 @@ const Dialogs = (props) => {
 
    let massagesElements =
       state.messagesData.map((m) => <Message message={m.messages} key={m.id} />);
-   let newMessageBody = state.newMessageBody;
+
 
 
    if (!props.isAuth) return <Redirect to={"/login"} />;
@@ -53,10 +47,10 @@ const AddMessageForm = (props) => {
          <div className='box-form'>
             <Field
                component="textarea"
-               name="NewMessageChange"
+               name="newMessageBody"
                placeholder="Enter yor message" />
-            <div><button>Send</button></div>
          </div>
+         <div><button>Send</button></div>
       </form>
    )
 };

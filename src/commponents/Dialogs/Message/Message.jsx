@@ -4,8 +4,10 @@ import './Message.css'
 
 const Message = (props) => {
       return (
-            <div className='messages-content'>
-                  <div className='messages' ><p>{props.message}</p></div>
+            <div className='messages-conteiner'>
+                  <div>
+                        <div className='messages' ><p>{props.message}</p></div>
+                  </div>
             </div>
       )
 };
