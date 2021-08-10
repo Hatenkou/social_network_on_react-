@@ -29,19 +29,20 @@ const MyPosts = (props) => {
 
 }
 
-const AddNewPostForm = (props) => {
+let AddNewPostForm = (props) => {
    return (
       <form onSubmit={props.handleSubmit} >
          <div>
             <Field
+               name="newPostText"
                component="textarea"
-               name="newPostText" />
+            />
          </div>
          <div className='button__post'>
-            <button><p>add post</p></button>
+            <button ><p>add post</p></button>
          </div>
       </form>
    )
 }
-const AddNewPostReduxForm = reduxForm({ form: 'ProfileAddNewPostForm' })(AddNewPostForm);
+let AddNewPostReduxForm = reduxForm({ form: 'ProfileAddNewPostForm' })(AddNewPostForm);
 export default MyPosts;
